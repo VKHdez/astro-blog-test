@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+import {RecentEntries} from '../components/organisms/recentEntries/RecentEntries.jsx';
+import {MainTitle} from '../components/atoms/MainTitle.jsx';
+
+
+const entries = [
+    'Bubble Sort Algorithm',
+    'Post - 404 Example'
+];
+---
+
+<Layout title="Blog Test">
+        <MainTitle content="Astro Test blog"/>
+        <p class="block py-4 px-3 box-border bg-gradient-to-tr from-indigo-100 to-indigo-50 text-violet-900 font-bold border border-violet-900 rounded-md" align="justify">
+            This is a Test project created using Astro, tailwind and react!
+        </p>
+
+        <RecentEntries entries={[entries[entries.length-1],entries[entries.length-2]]}/>
+
+</Layout>

@@ -1,0 +1,40 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+
+---
+<Layout title="404 :(">
+    <div class="text-center error-box">
+        <div class="error-apple-wrapper">
+            <img class="error-apple" src="/public/assets/404-apple.png"/>
+        </div>
+        <h2 class="font-serif text-4xl font-bold">Something is missing...</h2>
+        <h3 class="font-serif text-xl font-light">Hey! Someone has eaten our apple!</h3>
+        <p class="font-serif">back to <a href="/" class="home-link">Home c:</a></p>
+    </div>
+</Layout>
+
+<style>
+.error-box{
+    width:50%;
+    height:auto;
+    margin:auto;
+    margin-top:50px;
+}
+
+.error-apple-wrapper{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.error-apple{
+    height:300px;
+}
+
+.home-link{
+    color:#e86405;
+}
+</style>
